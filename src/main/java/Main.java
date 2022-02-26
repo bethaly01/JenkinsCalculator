@@ -11,7 +11,7 @@ public class Main {
         String str = sc.nextLine();
         int value = 0;
         //String [] commands = new ArrayList<String>();
-        while (!str.equals("exit")){
+
             String [] commands=str.split(" ");
 
             if(commands[0].equals("add")){
@@ -26,11 +26,7 @@ public class Main {
                 System.out.println(newCalculator.fibonacciNumberFinder(valueOf( commands[1])));
             }else if (commands[0].equals("binary")){
                 System.out.println(newCalculator.intToBinaryNumber(valueOf(commands[1])));
-            }else if (commands[0].equals("exit")){
-                break;
             }
             System.out.println();
-            str = sc.nextLine();
-        }
     }
 }
