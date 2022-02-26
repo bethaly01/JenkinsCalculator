@@ -1,4 +1,7 @@
-from openjdk
+ONBUILD ADD . /usr/src/app
+
+from openjdk/
+
 
 COPY ./src/main/java/*.java /
 
