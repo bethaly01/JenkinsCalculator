@@ -58,7 +58,6 @@ class Calculator {
     if int a = 16 then this method returns: 10000
      */
     String intToBinaryNumber(int n){
-        String test ="this should build the project";
         return Integer.toBinaryString(n);
     }
 
@@ -70,14 +69,11 @@ class Calculator {
 
     if you run this function twice with the same String input, it must return 2 unique String IDs
      */
-    //Hello World
-    ///aNOTHER COMMENTS
     String createUniqueID(String n){
         StringBuilder newString = new StringBuilder(n);
         String random = UUID.randomUUID().toString();
         newString.append(random);
         return newString.toString();
     }
-
 
 }
