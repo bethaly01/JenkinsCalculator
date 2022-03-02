@@ -2,7 +2,7 @@
 pipeline {
     environment {
         registry = "bethaly01/calculator_app"
-        registryCredential = 'dockerhub'
+        registryCredential = 'dockerHub'
         dockerImage=''
     }
     agent any
